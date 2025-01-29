@@ -1,7 +1,6 @@
 import sys
 from signal import SIGTERM
 import asyncio
-import logging
 
 import bot
 from bot.bot import Bot

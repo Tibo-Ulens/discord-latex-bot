@@ -1,8 +1,8 @@
 services:
-    example-discord-bot:
+    discord-latex-bot:
         build:
             context: .
-        container_name: example-discord-bot
+        container_name: discord-latex-bot
         restart: "no"
         secrets:
           - discord_token

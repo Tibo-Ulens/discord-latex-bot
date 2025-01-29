@@ -1,0 +1,27 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	margin=2.54cm
+}
+
+\usepackage{amsmath}
+
+\begin{document}
+	\begin{flalign}
+		&\int{\frac{1}{x\sqrt{x^4 - 1}} dx} \\
+		& \hspace*{1em} u = x^4 \Leftrightarrow du = 4x^3 dx \\
+		& \hspace*{1em} x = u^1/4 \Leftrightarrow dx = 1/4u^3/4 \\
+		\\
+		&\int{\frac{1}{u^{1/4}\sqrt{u - 1}4u^{3/4}} du} \\
+		&= \frac{1}{4} \int{\frac{1}{u\sqrt{u-1}} du} \\
+		& \hspace*{1em} v = \sqrt{u-1} \Leftrightarrow dv = \frac{1}{2\sqrt{u-1}} du \\
+		& \hspace*{1em} u = v^2 + 1 \Leftrightarrow du = 2v dv \\
+		&= \frac{1}{4} \int{\frac{1}{(v^2 + 1)v}2v dv} \\
+		&= \frac{1}{2} \int{\frac{1}{v^2 + 1}} dv \\
+		&= \frac{1}{2} \arctan{v} + C \\
+		&= \frac{1}{2} \arctan{\sqrt{u-1}} + C \\
+		&= \frac{1}{2} \arctan{\sqrt{x^4 - 1}} + C
+	\end{flalign}
+\end{document}

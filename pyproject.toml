@@ -1,13 +1,14 @@
 [tool.poetry]
-name = "example-discord-bot"
+name = "discord-latex-bot"
 version = "0.1.0"
 description = ""
 readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.13"
 discord-py = "^2.4.0"
+audioop-lts = "^0.2.1"
 
 [build-system]
 requires = ["poetry-core"]
